@@ -1,5 +1,12 @@
 -module(udpsrv).
--compile(export_all).
+-author("joel hansson").
+-export([init/1, server/1]).
+
+
+%
+% simple, buggy, PoC. A udp server that forwards what ever it gets
+% to a tcp remote server (localhost)
+%
 
 
 init(Port) ->
